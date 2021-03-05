@@ -10,8 +10,12 @@
         v-for="(todo, index) in todos.splice(0, 12)"
       >
         <div class="card w-100 ">
-          <div class="card-body">
+          <div class="card-body position-relative">
             <h5 class="card-text">{{ index + 1 }} / {{ todo.title }}</h5>
+    <div style="position: absolute; right:10px; bottom:10px">
+              <button class="btn btn-primary mr-2">edit</button>
+            <button class="btn btn-danger">delete</button>
+    </div>
           </div>
         </div>
       </div>
